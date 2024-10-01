@@ -1,14 +1,17 @@
+import { useContext } from 'react'
+import { ThemeContext } from '../App'
 import imgElon from '../assets/images/elon.jpg'
 import imgZuck from '../assets/images/zuck.jpg'
 
-export default function RightSide({ theme }) {
+export default function RightSide() {
+    const { theme } = useContext(ThemeContext);
     return (
         <aside>
             <div className={theme === 'dark' ? 'search-section dark' : 'search-section'}>
                 <i className="fa-solid fa-magnifying-glass search-icon"></i>
                 <input className="search" type="text" placeholder="Search Twitter" />
             </div>
-            
+
             <div className={theme === 'dark' ? 'widget dark' : 'widget'}>
                 <div className="widget-grid">
                     <h1>Get Verified</h1>
