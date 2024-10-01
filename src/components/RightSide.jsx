@@ -8,7 +8,7 @@ export default function RightSide({ theme }) {
                 <i className="fa-solid fa-magnifying-glass search-icon"></i>
                 <input className="search" type="text" placeholder="Search Twitter" />
             </div>
-
+            
             <div className={theme === 'dark' ? 'widget dark' : 'widget'}>
                 <div className="widget-grid">
                     <h1>Get Verified</h1>
